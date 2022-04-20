@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    background: none;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+}
+#heading h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline white;
+    font-size: 55px;
+    color:#db7f07;
+}
+#heading h2
+{
+    font-size: 50px;
+    color: azure;
+}
+#body {
+    background-color:  #151719;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+  }
+  .waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #db7f07;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(20px)
+    }
+  }
+#heading
+{
+    position: relative;
+    top: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: azure;
+}
+
+.navbar-nav>li>a:active
+{
+    
+    background:rgb(255, 255, 255);
+}
+.navbar-nav>li>a:hover
+{
+    
+    text-decoration:underline;
+    border:0px;
+    background:#000;
+}
+#heading>h3
+{
+    font-weight: bolder;
+}
+#body
+{
+    background: url(imgs/5.jpg);
+    min-height: 10vh;
+    background-position:center;
+    margin: 0px;
+    background-size: cover;
+    background-attachment: fixed ;
+}
+.navbar
+{
+    position: absolute;
+    width: 100%;
+}
+.navbar-toggle .icon-bar+.icon-bar
+{
+    background:#fff;
+}
+#Menu li a
+{
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.btn
+{
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 20px;
+    background: ;
+    border:  2px solid rgb(133, 133, 133);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    top: 30px;
+}
+.btn:hover
+{
+    background: wheat;
+    color: black;
+}
+
+/*-------about section ---------*/
+
+.about
+{
+    background-color: rgb(20, 19, 19);
+    margin-top: 0px;
+}
+.about h2
+{
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 100px;
+    text-decoration: underline white;
+    color: azure;
+}
+.rows h4
+{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center; 
+    color:#ff8800;
+    padding-top: 8px;
+}
+.rows p
+{
+    font-family:Indie Flower
+    1 style
+    Kimberly Geswein;
+    font-weight: 80;
+    padding-top: 20px;   
+    color: azure; 
+    text-align: justify;
+}
+#photo img
+{
+    padding-top: 10px;
+    border-radius: 50px;
+    height: 100%;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+}
+#photo img:hover
+{
+    transform: scale(0.9);
+}
+
+
+/*-------service section ---------*/
+
+.services 
+{
+    background: black;
+    padding: 10px;
+}
+.services h1
+{
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 120px;
+    text-decoration: underline white;
+    color: rgb(255, 255, 255);
+}
+.services .icon-box
+{
+    text-align: center;
+    background-color: #000;
+    border-radius: 10px;
+    color: antiquewhite;
+    padding: 10px 2px;
+    transition: all ease-in-out 0.3s;
+    transition: 0.25s ease-in-out;
+    line-height: 100px;
+}
+
+.services .icon-box .icon
+{
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+    width: 75px;
+    height: 65px;
+    border-radius: 50px;
+    transition: all .3s ease-out 0s;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+.services .icon-box .icon i
+{
+    color: aliceblue;
+    font-size: 50px;
+}
+.services .icon-box h4
+{
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-decoration: underline black;
+    font-size: 44px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.services .icon-box h4 a
+{
+    color: #ff8800;
+}
+.services .icon-box p
+{
+    line-height: 24px;
+    font-size: 20px;
+    padding:20px;
+    margin-bottom: 0;
+}
+.services .icon-box:hover
+{
+    background-color: #b89e07da;
+    border-color: black;
+}
+.services .icon-box:hover .icon
+{
+    background: rgb(2, 2, 2);
+}
+.services .icon-box:hover .icon i
+{
+    background: black;
+    padding:10px;
+    border-radius:100%;
+}
+.services .icon-box:hover icon::before
+{
+    background: brown;
+}
+.services .icon-box:hover h4 a,
+.services .icon-box:hover p
+{
+    color: rgb(255, 255, 255);
+}
+#boxbtn
+{
+    background: ;
+    border:  2px solid rgb(133, 133, 133);
+}
+#boxbtn:hover
+{
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+
+
+
+
+
+/*================== Service sections ends ==============*/
+
+
+/*===============Porfiles sections======================*/
+
+#ih1
+{
+    background: rgb(0, 0, 0);
+    
+}
+
+#ih1 
+{
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 120px;
+    text-decoration: underline rgb(12, 12, 12);
+    color: rgb(0, 0, 0);
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.row .column
+{
+    flex: 33.3%;
+    width: auto;
+    overflow: hidden;
+    padding:0 10px;
+}
+.row .column img
+{
+    height: 95%;
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(1) brightness(0.7);
+    border-radius: 5px;
+    transition: 0.2s linear;
+}
+.row .column img:hover
+{
+    filter: grayscale(0) brightness(1);
+}
+@media only screen and (max-width: 800px){
+    .row .column{
+        flex: 50%;
+    }
+}
+@media only screen and (max-width: 680px){
+    .row .column{
+        flex: 50%;
+    }
+    .row .column img
+{
+    filter: grayscale(0) brightness(1);
+}
+}
+/*---------------------Contact section-----------------------*/
+#contact
+{
+    background: rgb(0, 0, 0);
+    padding-bottom: 100px;
+}
+
+.heading1
+{
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 120px;
+    text-decoration: underline white;
+    color: rgb(255, 255, 255);
+}
+#cnthd
+{
+    color: #fff;
+    padding-left: 10px;
+}
+#cntbtn
+{
+    width: 50%;
+    letter-spacing: 1px;
+    background: transparent ;
+    transition: all 0.5s ease-in-out;
+}
+#cntbtn:hover
+{
+    transform: scale(1.05);
+    background-color: #fff;
+}
+.icon
+{
+    font-family: monospace;
+    font-size: 21px;
+}
+hr
+{
+    width: 100%;
+}
+.fafa ul
+{
+   text-decoration: none;
+   color: red;
+}
+.fafa li
+{
+    display:inline-block;
+    background: #fff;
+    height: 45px;
+    width: 45px;
+    font-size: 30px;
+    border-radius: 100%;
+    
+    padding: 5px;
+}
+.fafa li a
+{
+    padding-left:6px;
+}
